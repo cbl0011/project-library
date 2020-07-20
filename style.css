@@ -1,0 +1,57 @@
+body {
+    background-color: #1A3C62;
+}
+
+#book-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: space-around;
+}
+
+.add-form {
+    background-color: #7D6C9D;
+    color: #EEE7EA;
+    display: none;
+    overflow: hidden;
+    width: max-content;
+    padding-right: 24px;
+    padding-left: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 8px;
+    border-radius: 6px;
+}
+
+.active, .collapsible:hover {
+    background-color: #ccc;
+}
+
+.add-form input {
+    margin-bottom: 5px;
+}
+
+.book {
+    background-color: #EEE7EA;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 8px;
+    width: max-content;
+    margin: 16px;
+    border-radius: 8px;
+}
+
+.book .title {
+    color: #1A3C62;
+    font-family: 'Alfa Slab One';
+    font-size: 22px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+
+.book .author, .book .numPages, .book .read {
+    color: #1A3C62;
+    font-family: 'Asul';
+    font-weight: lighter;
+}
